@@ -9,13 +9,13 @@ function createWindow () {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      devTools: false,
+      devTools: true,
     },
-    autoHideMenuBar: true // true to hide, press Alt to show when hidden
+    autoHideMenuBar: false // true to hide, press Alt to show when hidden
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('signup.html')
+  mainWindow.loadFile('index.html')
 
   // Open DevTools automatically (comment out if you don't want it)
   mainWindow.webContents.openDevTools()

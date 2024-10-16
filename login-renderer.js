@@ -31,7 +31,7 @@
             //console.log(respData);
             const jwt_token = respData.jwt;
             localStorage.setItem('token', jwt_token);
-            window.location.href = 'https://people.arcada.fi/~heikkihe/virtualboard-frontend/boards.html';
+            window.location.href = './boards.html';
     
     
     

@@ -10,7 +10,7 @@
 
     if (!localStorage.getItem('token')) {
         alert("You are not logged in")
-        window.location.href = "https://people.arcada.fi/~heikkihe/virtualboard-frontend/index.html";
+        window.location.href = "./index.html";
     }
     
     const API_URL = 'https://virtualboard-api-h3bgghaga9f2ctg0.northeurope-01.azurewebsites.net' /*"http://localhost:8080"*/
@@ -416,7 +416,8 @@
     }
     
     const WS_TOKEN = localStorage.getItem('token');
-    const WS_URL = 'wss://virtualboard-ws.azurewebsites.net' //"ws://localhost:8081"
+    //const WS_URL = 'wss://virtualboard-ws.azurewebsites.net' //"ws://localhost:8081"
+    const WS_URL = "wss://wom24-ws-pastebin.azurewebsites.net";
     
     let socket;
     

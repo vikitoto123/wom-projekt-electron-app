@@ -7,7 +7,7 @@
     <title>Boards</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="./style/index.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
     <style>
  
     </style>
@@ -17,7 +17,7 @@
 <body class="bg-gray-100 p-6">
     
     <div id="boards-container" class="max-w-lg mx-auto space-y-6 flex-col">
-        <h1 class="text-3xl font-bold text-center">My Boards</h1>
+        <h1 class="text-3xl font-bold text-center">My Boards on Electron</h1>
     
         <div id="board-tag" class="text-lg font-semibold mb-4"></div>
     
@@ -26,7 +26,7 @@
             <div class="flex space-x-4">
                 <div class="w-auto h-10 bg-gray-200 flex items-center rounded-lg justify-center" id="user"></div>
                 <select id="boards-selector" class="p-2 px-4 border-gray-300 rounded-md"></select>            
-                <input type="button" id="new-note" value="Add New Board" class="bg-blue-500 text-white px-4 rounded-md hover:bg-blue-600 cursor-pointer" />
+                <input style="display: none" type="button" id="new-note" value="Add New Board" class="bg-blue-500 text-white px-4 rounded-md hover:bg-blue-600 cursor-pointer" />
             </div>
     
             <div class="flex space-x-4">
@@ -72,7 +72,7 @@
     <div id="websocket-test" class="max-w-lg mx-auto mt-8 p-6"></div>
     <div id='websocket-conn' class="max-w-lg mx-auto mt-8 p-6"></div>
 
-    <script src="./scripts/boards.js"></script>
+    <script src="./board-renderer.js"></script>
 
 </body>
 
