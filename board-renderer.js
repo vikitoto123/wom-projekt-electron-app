@@ -25,6 +25,8 @@
         const decodedPayload = JSON.parse(atob(payload));
         return decodedPayload.name;
     }
+
+
     
     const themes = [
         { background: 'linear-gradient(to right, #2193b0, #6dd5ed)', text: '#6dd5ed' },
@@ -45,6 +47,8 @@
         cardElement.style.color = themes[currentThemeIndex].text;
     }
     
+    document.querySelector('#theme-toggle').addEventListener('click', toggleTheme)
+
     //let boards = []; 
     
     // Function to fetch boards from the backend
